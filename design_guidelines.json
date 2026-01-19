@@ -1,0 +1,124 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "The Anti-AI Designer",
+    "philosophy": "Fusion over Imitation. Emotion First. Content is King.",
+    "vibe": "Playful Minimalism. Sophisticated but accessible. Organized chaos.",
+    "theme_mode": "light"
+  },
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Ocean Depth",
+        "hex": "#008C9E",
+        "tailwind": "bg-[#008C9E] text-white hover:bg-[#007A8A]"
+      },
+      "secondary": {
+        "name": "Sunshine",
+        "hex": "#FFD166",
+        "tailwind": "bg-[#FFD166] text-[#2D3748] hover:bg-[#FFC533]"
+      },
+      "accent": {
+        "name": "Berry",
+        "hex": "#EF476F",
+        "tailwind": "text-[#EF476F]"
+      },
+      "background": {
+        "main": "#FAFAFA",
+        "card": "#FFFFFF",
+        "tailwind": "bg-[#FAFAFA]"
+      },
+      "text": {
+        "main": "#2D3748",
+        "muted": "#718096",
+        "tailwind": "text-[#2D3748]"
+      }
+    },
+    "typography": {
+      "headings": {
+        "family": "Outfit, sans-serif",
+        "weights": ["600", "700"],
+        "usage": "Use for all H1-H6. Tight tracking (-0.02em)."
+      },
+      "body": {
+        "family": "DM Sans, sans-serif",
+        "weights": ["400", "500"],
+        "usage": "Use for paragraphs, inputs, and UI text."
+      }
+    },
+    "shapes": {
+      "radius": {
+        "default": "rounded-2xl",
+        "button": "rounded-full",
+        "card": "rounded-3xl"
+      }
+    }
+  },
+  "layout_strategy": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing": {
+      "section": "py-20 md:py-32",
+      "element": "gap-6 md:gap-8"
+    },
+    "grid": {
+      "bento": "grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[minmax(200px,auto)]",
+      "product": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#008C9E] text-white rounded-full px-8 py-4 font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300",
+      "secondary": "bg-[#FFD166] text-[#2D3748] rounded-full px-8 py-4 font-bold shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300",
+      "outline": "border-2 border-[#008C9E] text-[#008C9E] rounded-full px-8 py-4 font-bold hover:bg-[#008C9E] hover:text-white transition-all duration-300"
+    },
+    "cards": {
+      "product": "group relative bg-white rounded-3xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden",
+      "feature": "bg-white rounded-3xl p-8 shadow-md border-b-4 border-[#FFD166]"
+    },
+    "inputs": {
+      "default": "w-full rounded-xl border-gray-200 bg-gray-50 px-4 py-3 text-sm focus:border-[#008C9E] focus:bg-white focus:ring-2 focus:ring-[#008C9E]/20 transition-all outline-none"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero": {
+        "url": "https://images.unsplash.com/photo-1759678444870-1f09f0d9e688?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGtpZCUyMHBsYXlpbmclMjB3aXRoJTIwcHV6emxlJTIwdG95JTIwaW5kb29yfGVufDB8fHx8MTc2ODgwNjE0N3ww&ixlib=rb-4.1.0&q=85",
+        "alt": "Happy child playing with educational puzzle",
+        "category": "hero"
+      },
+      "categories": [
+        {
+          "name": "Wooden & Educational",
+          "url": "https://images.unsplash.com/photo-1637728225412-6210ff05c6f4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwyfHx3b29kZW4lMjBlZHVjYXRpb25hbCUyMHRveXMlMjBmb3IlMjBraWRzJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3Njg4MDYxNDV8MA&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "name": "Creative Play",
+          "url": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwzfHx3b29kZW4lMjBlZHVjYXRpb25hbCUyMHRveXMlMjBmb3IlMjBraWRzJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3Njg4MDYxNDV8MA&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "name": "Soft Toys",
+          "url": "https://images.pexels.com/photos/31061855/pexels-photo-31061855.jpeg"
+        }
+      ]
+    }
+  },
+  "universal_guidelines": [
+    "DO NOT use gradients for backgrounds. Use solid colors or subtle noise textures.",
+    "DO NOT use 'Inter' for headings. Use 'Outfit' via Google Fonts.",
+    "Ensure all interactive elements have a `data-testid` attribute.",
+    "Use 'sonner' for toast notifications.",
+    "Use 'lucide-react' for icons.",
+    "Buttons must be pill-shaped (rounded-full).",
+    "Product cards must have a 'Quick Add' button that appears on hover.",
+    "Navigation bar must be sticky with a glassmorphism effect (backdrop-blur-md bg-white/80).",
+    "Footer must be spacious (py-20) with a playful layout."
+  ],
+  "implementation_steps": [
+    "1. Install dependencies: `npm install @fontsource/outfit @fontsource/dm-sans lucide-react framer-motion clsx tailwind-merge`",
+    "2. Update `tailwind.config.js` to include the new colors and font families.",
+    "3. Create a `Layout` component that wraps the app with the Navbar and Footer.",
+    "4. Build the `Hero` section using the asymmetrical layout and the hero image.",
+    "5. Build the `ProductCard` component with the hover effects.",
+    "6. Implement the 'Bento' grid for the Categories section."
+  ]
+}
